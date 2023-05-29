@@ -40,7 +40,7 @@ def sumiao(img):
 
 
 if __name__ == '__main__':
-    img = cv2.imread('example.jpg')
+    img = cv2.imread('dog.jpg')
     # 输出显示
     plt.subplot(1,3,1), plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB)), plt.title('origin')
     plt.subplot(1,3,2), plt.imshow(lunkuo(img), 'gray'), plt.title('lunkuo')
