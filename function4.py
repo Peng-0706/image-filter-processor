@@ -16,6 +16,7 @@ def mosaic(img, size):
     """
     img1 = img
 
+
     # 定义马赛克大小
     mosaic_size = size
     if mosaic_size > 30:
