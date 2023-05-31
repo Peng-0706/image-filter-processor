@@ -43,7 +43,7 @@ def edge(img):
 
 # 返回轮廓图像
 def lunkuo(img):
-    temp1 = sharp(img)
+    temp1 = sharp(img, 0.1)
     return edge(temp1)
 
 
