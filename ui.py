@@ -1,7 +1,7 @@
 """
 Created on 2023年5月27日
 @author:liubochen
-@description:界面
+@description:未添加功能的界面
 """
 # -*- coding: utf-8 -*-
 
