@@ -66,12 +66,13 @@ def negative(img):
         :return: 负滤镜图像
     """
     # 获取图片大小
-    w, h = img.shape[:2]
+    img1 = img
+    w, h = img1.shape[:2]
     # 逐个像素取负
     for i in range(w):
         for j in range(h):
-            img[i, j] = (255 - img[i, j][0], 255 - img[i, j][1], 255 - img[i, j][2])
-    return img
+            img1[i, j] = (255 - img1[i, j][0], 255 - img1[i, j][1], 255 - img1[i, j][2])
+    return img1
 
 if __name__ == "__main__":
     img = cv2.imread("lenna_RGB.tif")
