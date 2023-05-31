@@ -16,22 +16,13 @@ def sharp(img, deep):
     return result
 
 
-# 图像亮度调整(范围：-10-10)
+# 图像亮度调整(范围：-10-5)
 def bright(img, deep):
     if deep == 0:
         return img
-    rows, cols, channels = img.shape
     dst = img.copy()
-    b = deep * 20
-    for i in range(rows):
-        for j in range(cols):
-            for c in range(3):
-                color = img[i, j][c] + b
-                if color > 255:  # 防止像素值越界（0~255）
-                    dst[i, j][c] = 255
-                elif color < 0:  # 防止像素值越界（0~255）
-                    dst[i, j][c] = 0
-    return dst
+    b = deep * 10
+    return np.uint8(np.clip((img + b), 0, 255))
 
 
 # 图像对比度调整(范围：0-300)
