@@ -66,7 +66,7 @@ def negative(img):
         :return: 负滤镜图像
     """
     # 获取图片大小
-    img1 = img
+    img1 = img.copy()
     w, h = img1.shape[:2]
     # 逐个像素取负
     for i in range(w):
