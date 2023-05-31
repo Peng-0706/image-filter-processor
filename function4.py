@@ -13,7 +13,7 @@ def mosaic(img, size):
     :param size: 马赛克块大小
     :return: 马赛克图像
     """
-    img1 = img
+    img1 = img.copy()
 
     # 定义马赛克大小
     mosaic_size = size
@@ -54,7 +54,7 @@ def mosaic1(img, size):
     :param size: 马赛克块大小
     :return: 马赛克图像
     """
-    img1 = img
+    img1 = img.copy()
 
     # 定义马赛克大小
     mosaic_size = size
@@ -109,7 +109,7 @@ def Grain(src, level):
         level = 0
 
     # 复制源图像
-    result = src
+    result = src.copy()
     # 遍历每个像素
     for i in range(row):
         t = result[i]
