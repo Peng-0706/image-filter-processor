@@ -17,6 +17,7 @@ import numpy as np
 import function4
 import function4_1
 import function_1_2_2
+import function3
 
 global img
 global temp_img
@@ -677,7 +678,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
     def lunkuo(self):
         global temp_img
         global img
-        self.qiangdu_Button.setEnabled(False)
+        self.horizontalSlider_3.setEnabled(False)
         temp_img = function_1_2_2.lunkuo(img)
         self.showlabel()
         self.ruidutiao.setValue(0)
@@ -689,7 +690,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
     def sumiao(self):
         global temp_img
         global img
-        self.qiangdu_Button.setEnabled(False)
+        self.horizontalSlider_3.setEnabled(False)
         temp_img = function_1_2_2.sumiao(img)
         self.showlabel()
         self.ruidutiao.setValue(0)
@@ -701,8 +702,8 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
     def miaobian(self):
         global temp_img
         global img
-        self.qiangdu_Button.setEnabled(False)
-        temp_img = function4_1.negative(img)
+        self.horizontalSlider_3.setEnabled(False)
+        temp_img = function3.outline(img)
         self.showlabel()
         self.ruidutiao.setValue(0)
         self.liangdutiao.setValue(0)
@@ -714,7 +715,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         global temp_img
         global img
         flag = 2
-        self.qiangdu_Button.setEnabled(True)
+        self.horizontalSlider_3.setEnabled(True)
         para = self.horizontalSlider_3.value()
         temp_img = function4.mosaic(img, para)
         self.showlabel()
@@ -726,7 +727,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
     def keli(self):
         global temp_img
         global img
-        self.qiangdu_Button.setEnabled(False)
+        self.horizontalSlider_3.setEnabled(False)
         para = self.horizontalSlider_3.value()
         temp_img = function4.Grain(img, 30)
         self.showlabel()
@@ -738,7 +739,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
     def shuicai(self):
         global temp_img
         global img
-        self.qiangdu_Button.setEnabled(False)
+        self.horizontalSlider_3.setEnabled(False)
         temp_img = function_1_2_2.shuicai(img)
         self.showlabel()
         self.ruidutiao.setValue(0)
@@ -750,7 +751,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
     def fudiao(self):
         global temp_img
         global img
-        self.qiangdu_Button.setEnabled(False)
+        self.horizontalSlider_3.setEnabled(False)
         temp_img = function_1_2_2.fudiao(img)
         self.showlabel()
         self.ruidutiao.setValue(0)
@@ -763,7 +764,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         global temp_img
         global img
         flag = 2
-        self.qiangdu_Button.setEnabled(True)
+        self.horizontalSlider_3.setEnabled(True)
         para = self.horizontalSlider_3.value()
         temp_img = function4_1.frostglass(img, para)
         self.showlabel()
@@ -775,7 +776,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
     def fugu(self):
         global temp_img
         global img
-        self.qiangdu_Button.setEnabled(False)
+        self.horizontalSlider_3.setEnabled(False)
         temp_img = function4_1.nostalgic(img)
         self.showlabel()
         self.ruidutiao.setValue(0)
@@ -787,7 +788,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
     def dipian(self):
         global temp_img
         global img
-        self.qiangdu_Button.setEnabled(False)
+        self.horizontalSlider_3.setEnabled(False)
         temp_img = function4_1.negative(img)
         self.showlabel()
         self.ruidutiao.setValue(0)
